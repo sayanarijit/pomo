@@ -4,7 +4,8 @@ arg1=$1
 shift
 args="$*"
                                                
-sec=${arg1:?Example: pomo 15 Take a break}
+min=${arg1:?Example: pomo 15 Take a break}
+sec=$((min * 60))
 msg="${args:?Example: pomo 15 Take a break}"
 while true; do
     sleep "${sec:?}" && notify-send "${msg:?}"
