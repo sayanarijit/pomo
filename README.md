@@ -19,3 +19,9 @@ function pomo() {
     done
 }
 ```
+
+### Usage
+
+```bash
+pomo 15 Take a break
+```
