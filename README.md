@@ -16,7 +16,7 @@ function pomo() {
     msg="${args:?Example: pomo 15 Take a break}"
 
     while true; do
-        sleep "${sec:?}" && echo "${msg:?}" && notify-send -u critical -t 0 "${msg:?}" -a pomo
+        sleep "${sec:?}" && echo "${msg:?}" && notify-send -u critical -t 0 -a pomo "${msg:?}"
     done
 }
 ```
